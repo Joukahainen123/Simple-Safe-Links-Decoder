@@ -4,15 +4,15 @@
 from urllib import parse
 
 while True:
-    safelink = input("Give SafeLink URL (or 'e' to exit): ").strip()
+    safelink = input("Give Safe Link URL (or 'e' to exit): ").strip()
     if safelink.lower() == 'e':
         print("Thanks and goodbye.")
         break
     if not safelink:
-        print("Input cannot be empty. Please provide a SafeLink URL.")
+        print("Input cannot be empty. Please provide a Safe Link URL.")
         continue
     if not safelink.startswith("https"):
-        print("URL must start with 'https'. Please provide a valid SafeLink URL.")
+        print("URL must start with 'https'. Please provide a valid Safe Link URL.")
         continue
 
     RED = '\033[91m'
